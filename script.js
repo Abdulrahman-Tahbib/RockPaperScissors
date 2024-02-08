@@ -52,7 +52,7 @@ function playGame() {
     console.log(`computer (${computerscore}) - player (${playerscore})`);
     
 }
-//Create a for loop to play 4 rounds of the game
+//Create a for loop to play 5 rounds of the game
 for(let i=0;i<5;i++){
     playGame();
 }
