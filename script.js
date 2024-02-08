@@ -1,3 +1,6 @@
+//Create two variables computerscore and playerscore to keep track of the score
+let computerscore = 0;
+let playerscore = 0;
 //Create a function that generates a random number between 1 and 3
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
@@ -30,6 +33,7 @@ function playRound(computerSelection,playerSelection) {
     }
 
     else if ((computer==='ROCK' && player==='PAPER') || (computer==='PAPER' && player==='SCISSOR') || (computer==='SCISSOR' && player==='ROCK')){
+        ++playerscore;
         return `You win ${player} beats ${computer}`; 
     }
 
@@ -38,8 +42,15 @@ function playRound(computerSelection,playerSelection) {
     }
 
     else{
+        ++computerscore;
         return `You lose ${computer} beats ${player}`;  
     }  
 }
+//Create a function that plays a round and displays the result and score
+function playGame() {
+    console.log(playRound(getComputerChoice(),prompt('choose: ROCK, PAPER, SCISSOR')));
+    console.log(`computer (${computerscore}) - player (${playerscore})`);
+    
+}
 
-console.log(playRound(getComputerChoice(),prompt('choose: Rock, Paper, Scissors')));
+playGame();
