@@ -19,3 +19,27 @@ function getComputerChoice(){
         return 'SCISSOR';
     }   
 }
+
+//Create a function that takes player and computer choice and return the result(win, lose, tie)
+function playRound(computerSelection,playerSelection) {
+    let computer = computerSelection;
+    let player = playerSelection.toUpperCase();
+    
+    if (player!=='PAPER'&&player!=='SCISSOR'&&player!=='ROCK') {
+        return'Wrong input';
+    }
+
+    else if ((computer==='ROCK' && player==='PAPER') || (computer==='PAPER' && player==='SCISSOR') || (computer==='SCISSOR' && player==='ROCK')){
+        return `You win ${player} beats ${computer}`; 
+    }
+
+    else if(computer===player){
+        return `Its a tie`;
+    }
+
+    else{
+        return `You lose ${computer} beats ${player}`;  
+    }  
+}
+
+console.log(playRound(getComputerChoice(),prompt('choose: Rock, Paper, Scissors')));
