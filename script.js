@@ -46,11 +46,7 @@ function playRound(computerSelection,playerSelection) {
         return `You lose ${computer} beats ${player}`;  
     }  
 }
-//Create a function that plays a round and displays the result and score
-// function playGame() {
-//     console.log(playRound(getComputerChoice(),prompt('choose: ROCK, PAPER, SCISSOR')));
-//     console.log(`computer (${computerscore}) - player (${playerscore})`);
-    
+
 
 
 
