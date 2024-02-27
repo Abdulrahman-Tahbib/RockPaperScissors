@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <div class="header">Rock, Paper, Scissors</div>
+    <div class="content">
+        <div class="player">
+            <div class="label">Player</div>
+            <div><img src="./img/player.png" alt="player"></div>
+            <div class="op">
+                <button class="en" id="rock"><img src="./img/rock.png" alt="rock"></button>
+                <button class="en" id="paper"><img src="./img/paper.png" alt="paper"></button>
+                <button class="en" id="scissor"><img src="./img/scissor.png" alt="scissor"></button>
+            </div>
+        </div>
+        <div class="sc">
+            <div class="label" id="mid">Score</div>
+            <div id="result">play a game</div>
+            <div id="score">Rock, paper, Scissors</div>
+        </div>
+        <div class="comp">
+            <div class="label">Computer</div>
+            <div><img src="./img/comp.png" alt="computer"></div>
+            <div class="op">
+                <button><img src="./img/rock.png" alt="rock"></button>
+                <button><img src="./img/paper.png" alt="paper"></button>
+                <button><img src="./img/scissor.png" alt="scissor"></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">Copyright © Abdulrahman-tahbib</div>
 </body>
 </html>

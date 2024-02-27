@@ -1,0 +1,100 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header ,
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.content {
+    background-color: #4a328b;
+    padding: 60px 0 61px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.player ,
+.sc ,
+.comp {
+    height: 400px;
+    width: 400px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.sc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+#result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#score {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.player ,
+.comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 320px;
+}
+
+
+.op {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    
+    background-color: transparent;
+    border-radius: 200px;
+    border-width: 3px;
+    border-color: black;
+    
+}
+
+.op > .en:hover {
+    background-color: #bebebe;
+    cursor: pointer;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}

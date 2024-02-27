@@ -47,12 +47,23 @@ function playRound(computerSelection,playerSelection) {
     }  
 }
 //Create a function that plays a round and displays the result and score
-function playGame() {
-    console.log(playRound(getComputerChoice(),prompt('choose: ROCK, PAPER, SCISSOR')));
-    console.log(`computer (${computerscore}) - player (${playerscore})`);
+// function playGame() {
+//     console.log(playRound(getComputerChoice(),prompt('choose: ROCK, PAPER, SCISSOR')));
+//     console.log(`computer (${computerscore}) - player (${playerscore})`);
     
-}
-//Create a for loop to play 5 rounds of the game
-for(let i=0;i<5;i++){
-    playGame();
-}
+
+
+
+const div1 = document.querySelector('#result');
+const div2 = document.querySelector('#score');
+const buttons = document.querySelectorAll('.en');
+
+
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+        div1.textContent = playRound(getComputerChoice(),button.id);
+        div2.textContent = `computer (${computerscore}) - player (${playerscore})`;    
+    });
+    
+});
